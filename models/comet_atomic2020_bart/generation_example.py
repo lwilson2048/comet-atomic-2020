@@ -15,6 +15,7 @@ def chunks(lst, n):
 
 class Comet:
     def __init__(self, model_path):
+        print(self.device)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_path).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
