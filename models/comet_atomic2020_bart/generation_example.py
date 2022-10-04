@@ -111,7 +111,7 @@ if __name__ == "__main__":
 
     # sample usage (reproducing AAAI)
     print("model loading ...")
-    comet = Comet("./comet-atomic_2020_BART_aaai")
+    comet = Comet("/opt/comet-atomic_2020_BART_aaai")
     comet.model.zero_grad()
     print("model loaded")
     queries = []
@@ -126,7 +126,7 @@ if __name__ == "__main__":
 
     # sample usage (reproducing demo)
     print("model loading ...")
-    comet = Comet("./comet-atomic_2020_BART")
+    comet = Comet("/opt/comet-atomic_2020_BART")
     comet.model.zero_grad()
     print("model loaded")
     queries = []
